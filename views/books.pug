@@ -1,0 +1,18 @@
+html(lang='en')
+ head
+    title These are the book list!
+ body
+    h1
+    ul
+        each book in books
+            li
+                .card(style='width: 18rem;')
+                    .card-body
+                        h5.card-title 
+                        p=book.name
+                        p.card-text
+                        p=`by ${book.author.name}`
+                        a.btn.btn-primary(href='#') Read the book
+                        img.card-img-top(src='...' alt='Card image cap')
+                        
+                
